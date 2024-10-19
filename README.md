@@ -6,6 +6,10 @@ Here's a summary for your GitHub README file:
 
 This project demonstrates how to create an animated video using OpenCV in C++. It overlays text bubbles onto character images, simulating a conversation through a series of frames. The program generates six frames, each containing a different line of dialogue, along with an introductory and concluding screen.
 
+
+https://github.com/user-attachments/assets/d07b5ae0-c0b7-4cb7-878d-3fff5f46b505
+
+
 ## Features
 - **Text Bubble Creation**: Dynamically generates text bubbles that contain conversation text.
 - **Image Overlay**: Combines character images with text bubbles using alpha blending.
