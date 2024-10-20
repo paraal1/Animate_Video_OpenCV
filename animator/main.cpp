@@ -255,6 +255,10 @@ int main() {
         return -1;
     }
 
+    double imageDuration = 1.5;
+    int framesPerImage = static_cast<int>(fps * imageDuration);
+
+
     // Loop through the image files and add them to the video
     for (const string& imageFile : imageFiles) {
         Mat frame = imread(imageFile);
@@ -263,8 +267,10 @@ int main() {
             continue; // Skip this file if it can't be loaded
         }
 
-        // Write the image to the video
-        videoWriter.write(frame);
+        // Write the image multiple times to the video (to make it stay longer)
+        for (int i = 0; i < framesPerImage; ++i) {
+            videoWriter.write(frame);
+        }
 
         // Optional: Display the current frame
         imshow("Frame", frame);
